@@ -4,7 +4,7 @@ def perguntar ():
                   "<P> -Para Pesquisar um usuário:\n"+
                   "<E> -Para Excluir um usuário:\n"+
                   "<L> -Para Listar um usuário: \n"+
-                  "<N> -Para encerrar: ").upper()
+                  "<Enter> -Para encerrar: ").upper()
 
 def inserir (dicionario):
     dicionario [input ("Digite o login: ").upper()] = [
@@ -12,7 +12,7 @@ def inserir (dicionario):
                                                         input ("Digite a última data de acesso: "),
                                                         input ("Qual a última estação acessada: ").upper()
                                                         ]
-
+                                                    
 def pesquisar (dicionario, chave):
     lista=dicionario.get(chave)
     if lista!= None:
@@ -29,4 +29,4 @@ def listar (dicionario):
     for chave, valor in dicionario.items():
         print("Objeto......")
         print("Login: ", chave)
-        print("Dados:", valor)                                                
+        print("Dados:", valor)
